@@ -16,6 +16,7 @@
 		936064A428CC38C3009A5819 /* Streamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936064A328CC38C3009A5819 /* Streamer.swift */; };
 		936064A628CC3A5F009A5819 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936064A528CC3A5F009A5819 /* UIImage+Ext.swift */; };
 		936064A828CC3AAB009A5819 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936064A728CC3AAB009A5819 /* UIView+Ext.swift */; };
+		936064E928CC83CB009A5819 /* CameraPreviewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936064E828CC83CB009A5819 /* CameraPreviewLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		936064A328CC38C3009A5819 /* Streamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Streamer.swift; sourceTree = "<group>"; };
 		936064A528CC3A5F009A5819 /* UIImage+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		936064A728CC3AAB009A5819 /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		936064E828CC83CB009A5819 /* CameraPreviewLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreviewLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				9360648528CC3487009A5819 /* FaceCamFW.h */,
+				936064E828CC83CB009A5819 /* CameraPreviewLayer.swift */,
 				936064A728CC3AAB009A5819 /* UIView+Ext.swift */,
 				936064A528CC3A5F009A5819 /* UIImage+Ext.swift */,
 				936064A328CC38C3009A5819 /* Streamer.swift */,
@@ -170,6 +173,7 @@
 				9360649E28CC36A6009A5819 /* VideoConfig.swift in Sources */,
 				9360649228CC3513009A5819 /* FaceCam.swift in Sources */,
 				9360649A28CC35FF009A5819 /* StreamerFacecam.swift in Sources */,
+				936064E928CC83CB009A5819 /* CameraPreviewLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,6 +35,7 @@ public protocol ApplicationStateObserver: AnyObject {
 }
 
 public protocol StreamerFacecamManagerDelegate: AnyObject {
+    func showToast(text: String)
     func captureStateDidChange(state: CaptureState, status: Error)
     func recordStateDidChange(state: RecordFacecameState, status: Error?)
     func photoSaved(fileUrl: URL)
@@ -279,7 +280,7 @@ public class StreamerFacecamManager: NSObject {
         for input in audioSession.currentRoute.inputs {
             let message = input.portName
             DispatchQueue.main.async {
-//                Toast(text: message).show()
+                self.delegate?.showToast(text: message)
             }
 //            ////DLog("Active input: \(input), h/w sample rate: \(audioSession.sampleRate)")
         }
