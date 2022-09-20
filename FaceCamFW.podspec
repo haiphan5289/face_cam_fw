@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "FaceCamFW"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.2"
   spec.summary      = "This framework have the base code for all projects."
   spec.description  = "I hope This Framework will you to code easy, It take time less than"
 
