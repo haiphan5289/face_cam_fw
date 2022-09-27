@@ -8,9 +8,9 @@
 import UIKit
 import AVFoundation
 
-public class VideoHelper: NSObject {
+class VideoHelper: NSObject {
 
-    static public func thumbnailFromVideo(videoUrl: URL, time: CMTime) -> UIImage{
+    static func thumbnailFromVideo(videoUrl: URL, time: CMTime) -> UIImage{
         let asset: AVAsset = AVAsset(url: videoUrl) as AVAsset
         let imgGenerator = AVAssetImageGenerator(asset: asset)
         imgGenerator.appliesPreferredTrackTransform = true
@@ -24,7 +24,7 @@ public class VideoHelper: NSObject {
         return UIImage()
     }
     
-    static public func videoDuration(videoURL: URL) -> Float64 {
+    static func videoDuration(videoURL: URL) -> Float64 {
         let source = AVURLAsset(url: videoURL)
         return CMTimeGetSeconds(source.duration)
     }

@@ -43,6 +43,7 @@ public protocol StreamerFacecamManagerDelegate: AnyObject {
     func didOutputCGImage(outputImage: CGImage?, pipImage: CGImage?)
 }
 
+@available(iOS 13.0, *)
 public class StreamerFacecamManager: NSObject {
     public weak var delegate: StreamerFacecamManagerDelegate?
     
@@ -920,6 +921,7 @@ public class StreamerFacecamManager: NSObject {
 }
 
 // MARK: Notifications from capture session
+@available(iOS 13.0, *)
 extension StreamerFacecamManager {
     public func registerForNotifications() {
         let nc = NotificationCenter.default
@@ -1045,6 +1047,7 @@ extension StreamerFacecamManager {
 
 // MARK: AVCaptureVideoDataOutputSampleBufferDelegate
 // MARK: AVCaptureAudioDataOutputSampleBufferDelegate
+@available(iOS 13.0, *)
 extension StreamerFacecamManager: AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
     public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         
@@ -1116,8 +1119,8 @@ extension StreamerFacecamManager: AVCaptureVideoDataOutputSampleBufferDelegate, 
     }
 }
 
+@available(iOS 13.0, *)
 extension StreamerFacecamManager: AVCapturePhotoCaptureDelegate {
-    @available(iOS 11.0,*)
     public func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if error == nil, let imageData = photo.fileDataRepresentation() {
             do {
@@ -1138,6 +1141,7 @@ extension StreamerFacecamManager: AVCapturePhotoCaptureDelegate {
 }
 
 // MARK: Video player
+@available(iOS 13.0, *)
 extension StreamerFacecamManager: AVPlayerItemOutputPullDelegate {
     public func initVideo(_ videoURL: URL?) {
         guard let url = videoURL else {

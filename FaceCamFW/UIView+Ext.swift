@@ -24,6 +24,7 @@ extension UIProgressView {
     }
 }
 
+@available(iOS 9.0, *)
 extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         get {
@@ -180,21 +181,21 @@ extension UIView {
         return all
     }
     
-    func addShadowDecorate(radius: CGFloat = 8,
-                           maskCorner: CACornerMask,
-                        shadowColor: UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3),
-                        shadowOffset: CGSize = CGSize(width: 0, height: 1.0),
-                        shadowRadius: CGFloat = 3,
-                        shadowOpacity: Float = 1) {
-        self.layer.cornerRadius = radius
-        self.layer.maskedCorners = maskCorner
-        self.clipsToBounds = true
-        self.layer.masksToBounds = false
-        self.layer.shadowRadius = shadowRadius
-        self.layer.shadowOpacity = shadowOpacity
-        self.layer.shadowOffset = shadowOffset
-        self.layer.shadowColor = shadowColor.cgColor
-    }
+//    func addShadowDecorate(radius: CGFloat = 8,
+//                           maskCorner: CACornerMask,
+//                        shadowColor: UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3),
+//                        shadowOffset: CGSize = CGSize(width: 0, height: 1.0),
+//                        shadowRadius: CGFloat = 3,
+//                        shadowOpacity: Float = 1) {
+//        self.layer.cornerRadius = radius
+//        self.layer.maskedCorners = maskCorner
+//        self.clipsToBounds = true
+//        self.layer.masksToBounds = false
+//        self.layer.shadowRadius = shadowRadius
+//        self.layer.shadowOpacity = shadowOpacity
+//        self.layer.shadowOffset = shadowOffset
+//        self.layer.shadowColor = shadowColor.cgColor
+//    }
     
     func addGradientLayerInForeground(frame: CGRect, colors: [UIColor]) {
         let gradient = CAGradientLayer()
@@ -395,6 +396,7 @@ extension UIView {
     }
 }
 
+@available(iOS 11.0, *)
 class CustomView: UIView {
     @IBInspectable var firstColor: UIColor = UIColor.clear {
        didSet {

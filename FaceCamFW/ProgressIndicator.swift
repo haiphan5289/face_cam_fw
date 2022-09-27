@@ -7,10 +7,10 @@
 
 import UIKit
 
-public class ProgressIndicator: UIView {
-    public var imageView = UIImageView()
+class ProgressIndicator: UIView {
+    var imageView = UIImageView()
     
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         
         let bundle = Bundle(for: StartIndicator.self)
@@ -26,12 +26,12 @@ public class ProgressIndicator: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public override func layoutSubviews() {
+    override func layoutSubviews() {
         super.layoutSubviews()
         imageView.frame = CGRect(x: (self.bounds.width / 2) - 5, y: 0, width: 10, height: self.bounds.height)
     }
 
-    public override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         let frame = CGRect(x: -self.frame.size.width / 2,
                            y: 0,
                            width: self.frame.size.width * 2,

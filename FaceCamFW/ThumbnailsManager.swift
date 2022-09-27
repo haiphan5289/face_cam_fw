@@ -8,9 +8,9 @@
 import UIKit
 import AVFoundation
 
-public class ThumbnailsManager: NSObject {
+class ThumbnailsManager: NSObject {
     
-    public var thumbnailViews = [UIImageView]()
+    var thumbnailViews = [UIImageView]()
 
     private func addImagesToView(images: [UIImage], view: UIView){
         
@@ -57,7 +57,7 @@ public class ThumbnailsManager: NSObject {
         return Int(ceil(num))
     }
     
-    public func updateThumbnails(view: UIView, videoURL: URL, duration: Float64) -> [UIImageView]{
+    func updateThumbnails(view: UIView, videoURL: URL, duration: Float64) -> [UIImageView]{
 
         var thumbnails = [UIImage]()
         var offset: Float64 = 0

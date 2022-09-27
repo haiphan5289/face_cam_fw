@@ -7,48 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		934C58C628E34E9F00E146D7 /* ThumbnailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58B428E34E9E00E146D7 /* ThumbnailsManager.swift */; };
+		934C58C728E34E9F00E146D7 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58B528E34E9E00E146D7 /* ProgressIndicator.swift */; };
+		934C58C828E34E9F00E146D7 /* VideoRecordSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58B628E34E9F00E146D7 /* VideoRecordSlider.swift */; };
+		934C58C928E34E9F00E146D7 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58B728E34E9F00E146D7 /* UIColor+Ext.swift */; };
+		934C58CA28E34E9F00E146D7 /* VideoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58B828E34E9F00E146D7 /* VideoConfig.swift */; };
+		934C58CB28E34E9F00E146D7 /* FaceCam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58B928E34E9F00E146D7 /* FaceCam.swift */; };
+		934C58CC28E34E9F00E146D7 /* Streamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58BA28E34E9F00E146D7 /* Streamer.swift */; };
+		934C58CD28E34E9F00E146D7 /* OTResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58BB28E34E9F00E146D7 /* OTResizableView.swift */; };
+		934C58CE28E34E9F00E146D7 /* StreamerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58BC28E34E9F00E146D7 /* StreamerDelegate.swift */; };
+		934C58CF28E34E9F00E146D7 /* StartIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58BD28E34E9F00E146D7 /* StartIndicator.swift */; };
+		934C58D028E34E9F00E146D7 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58BE28E34E9F00E146D7 /* UIView+Ext.swift */; };
+		934C58D128E34E9F00E146D7 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58BF28E34E9F00E146D7 /* VideoHelper.swift */; };
+		934C58D228E34E9F00E146D7 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58C028E34E9F00E146D7 /* UIImage+Ext.swift */; };
+		934C58D328E34E9F00E146D7 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58C128E34E9F00E146D7 /* TimeView.swift */; };
+		934C58D428E34E9F00E146D7 /* ImageTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58C228E34E9F00E146D7 /* ImageTransform.swift */; };
+		934C58D528E34E9F00E146D7 /* CameraPreviewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58C328E34E9F00E146D7 /* CameraPreviewLayer.swift */; };
+		934C58D628E34E9F00E146D7 /* OTGripPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58C428E34E9F00E146D7 /* OTGripPointView.swift */; };
+		934C58D728E34E9F00E146D7 /* StreamerFacecam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C58C528E34E9F00E146D7 /* StreamerFacecam.swift */; };
 		9360648628CC3487009A5819 /* FaceCamFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 9360648528CC3487009A5819 /* FaceCamFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93897AF828DA30D4000E159E /* OTResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AE628DA30D3000E159E /* OTResizableView.swift */; };
-		93897AF928DA30D4000E159E /* StartIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AE728DA30D3000E159E /* StartIndicator.swift */; };
-		93897AFA28DA30D4000E159E /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AE828DA30D3000E159E /* UIColor+Ext.swift */; };
-		93897AFB28DA30D4000E159E /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AE928DA30D3000E159E /* UIView+Ext.swift */; };
-		93897AFC28DA30D4000E159E /* VideoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AEA28DA30D3000E159E /* VideoConfig.swift */; };
-		93897AFD28DA30D4000E159E /* OTGripPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AEB28DA30D3000E159E /* OTGripPointView.swift */; };
-		93897AFE28DA30D4000E159E /* StreamerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AEC28DA30D3000E159E /* StreamerDelegate.swift */; };
-		93897AFF28DA30D4000E159E /* ThumbnailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AED28DA30D3000E159E /* ThumbnailsManager.swift */; };
-		93897B0028DA30D4000E159E /* StreamerFacecam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AEE28DA30D3000E159E /* StreamerFacecam.swift */; };
-		93897B0128DA30D4000E159E /* Streamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AEF28DA30D3000E159E /* Streamer.swift */; };
-		93897B0228DA30D4000E159E /* CameraPreviewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AF028DA30D3000E159E /* CameraPreviewLayer.swift */; };
-		93897B0328DA30D4000E159E /* FaceCam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AF128DA30D3000E159E /* FaceCam.swift */; };
-		93897B0428DA30D4000E159E /* ImageTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AF228DA30D3000E159E /* ImageTransform.swift */; };
-		93897B0528DA30D4000E159E /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AF328DA30D3000E159E /* ProgressIndicator.swift */; };
-		93897B0628DA30D4000E159E /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AF428DA30D3000E159E /* UIImage+Ext.swift */; };
-		93897B0728DA30D4000E159E /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AF528DA30D4000E159E /* VideoHelper.swift */; };
-		93897B0828DA30D4000E159E /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AF628DA30D4000E159E /* TimeView.swift */; };
-		93897B0928DA30D4000E159E /* VideoRecordSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93897AF728DA30D4000E159E /* VideoRecordSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		934C58B428E34E9E00E146D7 /* ThumbnailsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailsManager.swift; sourceTree = "<group>"; };
+		934C58B528E34E9E00E146D7 /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		934C58B628E34E9F00E146D7 /* VideoRecordSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRecordSlider.swift; sourceTree = "<group>"; };
+		934C58B728E34E9F00E146D7 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		934C58B828E34E9F00E146D7 /* VideoConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoConfig.swift; sourceTree = "<group>"; };
+		934C58B928E34E9F00E146D7 /* FaceCam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceCam.swift; sourceTree = "<group>"; };
+		934C58BA28E34E9F00E146D7 /* Streamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Streamer.swift; sourceTree = "<group>"; };
+		934C58BB28E34E9F00E146D7 /* OTResizableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTResizableView.swift; sourceTree = "<group>"; };
+		934C58BC28E34E9F00E146D7 /* StreamerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerDelegate.swift; sourceTree = "<group>"; };
+		934C58BD28E34E9F00E146D7 /* StartIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartIndicator.swift; sourceTree = "<group>"; };
+		934C58BE28E34E9F00E146D7 /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		934C58BF28E34E9F00E146D7 /* VideoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		934C58C028E34E9F00E146D7 /* UIImage+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		934C58C128E34E9F00E146D7 /* TimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		934C58C228E34E9F00E146D7 /* ImageTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransform.swift; sourceTree = "<group>"; };
+		934C58C328E34E9F00E146D7 /* CameraPreviewLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreviewLayer.swift; sourceTree = "<group>"; };
+		934C58C428E34E9F00E146D7 /* OTGripPointView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTGripPointView.swift; sourceTree = "<group>"; };
+		934C58C528E34E9F00E146D7 /* StreamerFacecam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerFacecam.swift; sourceTree = "<group>"; };
 		9360648228CC3487009A5819 /* FaceCamFW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FaceCamFW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9360648528CC3487009A5819 /* FaceCamFW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceCamFW.h; sourceTree = "<group>"; };
-		93897AE628DA30D3000E159E /* OTResizableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTResizableView.swift; sourceTree = "<group>"; };
-		93897AE728DA30D3000E159E /* StartIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartIndicator.swift; sourceTree = "<group>"; };
-		93897AE828DA30D3000E159E /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
-		93897AE928DA30D3000E159E /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
-		93897AEA28DA30D3000E159E /* VideoConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoConfig.swift; sourceTree = "<group>"; };
-		93897AEB28DA30D3000E159E /* OTGripPointView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTGripPointView.swift; sourceTree = "<group>"; };
-		93897AEC28DA30D3000E159E /* StreamerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerDelegate.swift; sourceTree = "<group>"; };
-		93897AED28DA30D3000E159E /* ThumbnailsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailsManager.swift; sourceTree = "<group>"; };
-		93897AEE28DA30D3000E159E /* StreamerFacecam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerFacecam.swift; sourceTree = "<group>"; };
-		93897AEF28DA30D3000E159E /* Streamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Streamer.swift; sourceTree = "<group>"; };
-		93897AF028DA30D3000E159E /* CameraPreviewLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreviewLayer.swift; sourceTree = "<group>"; };
-		93897AF128DA30D3000E159E /* FaceCam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceCam.swift; sourceTree = "<group>"; };
-		93897AF228DA30D3000E159E /* ImageTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransform.swift; sourceTree = "<group>"; };
-		93897AF328DA30D3000E159E /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
-		93897AF428DA30D3000E159E /* UIImage+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
-		93897AF528DA30D4000E159E /* VideoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
-		93897AF628DA30D4000E159E /* TimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
-		93897AF728DA30D4000E159E /* VideoRecordSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRecordSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,24 +83,24 @@
 			isa = PBXGroup;
 			children = (
 				9360648528CC3487009A5819 /* FaceCamFW.h */,
-				93897AF028DA30D3000E159E /* CameraPreviewLayer.swift */,
-				93897AF128DA30D3000E159E /* FaceCam.swift */,
-				93897AF228DA30D3000E159E /* ImageTransform.swift */,
-				93897AEB28DA30D3000E159E /* OTGripPointView.swift */,
-				93897AE628DA30D3000E159E /* OTResizableView.swift */,
-				93897AF328DA30D3000E159E /* ProgressIndicator.swift */,
-				93897AE728DA30D3000E159E /* StartIndicator.swift */,
-				93897AEF28DA30D3000E159E /* Streamer.swift */,
-				93897AEC28DA30D3000E159E /* StreamerDelegate.swift */,
-				93897AEE28DA30D3000E159E /* StreamerFacecam.swift */,
-				93897AED28DA30D3000E159E /* ThumbnailsManager.swift */,
-				93897AF628DA30D4000E159E /* TimeView.swift */,
-				93897AE828DA30D3000E159E /* UIColor+Ext.swift */,
-				93897AF428DA30D3000E159E /* UIImage+Ext.swift */,
-				93897AE928DA30D3000E159E /* UIView+Ext.swift */,
-				93897AEA28DA30D3000E159E /* VideoConfig.swift */,
-				93897AF528DA30D4000E159E /* VideoHelper.swift */,
-				93897AF728DA30D4000E159E /* VideoRecordSlider.swift */,
+				934C58C328E34E9F00E146D7 /* CameraPreviewLayer.swift */,
+				934C58B928E34E9F00E146D7 /* FaceCam.swift */,
+				934C58C228E34E9F00E146D7 /* ImageTransform.swift */,
+				934C58C428E34E9F00E146D7 /* OTGripPointView.swift */,
+				934C58BB28E34E9F00E146D7 /* OTResizableView.swift */,
+				934C58B528E34E9E00E146D7 /* ProgressIndicator.swift */,
+				934C58BD28E34E9F00E146D7 /* StartIndicator.swift */,
+				934C58BA28E34E9F00E146D7 /* Streamer.swift */,
+				934C58BC28E34E9F00E146D7 /* StreamerDelegate.swift */,
+				934C58C528E34E9F00E146D7 /* StreamerFacecam.swift */,
+				934C58B428E34E9E00E146D7 /* ThumbnailsManager.swift */,
+				934C58C128E34E9F00E146D7 /* TimeView.swift */,
+				934C58B728E34E9F00E146D7 /* UIColor+Ext.swift */,
+				934C58C028E34E9F00E146D7 /* UIImage+Ext.swift */,
+				934C58BE28E34E9F00E146D7 /* UIView+Ext.swift */,
+				934C58B828E34E9F00E146D7 /* VideoConfig.swift */,
+				934C58BF28E34E9F00E146D7 /* VideoHelper.swift */,
+				934C58B628E34E9F00E146D7 /* VideoRecordSlider.swift */,
 			);
 			path = FaceCamFW;
 			sourceTree = "<group>";
@@ -192,24 +192,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93897B0628DA30D4000E159E /* UIImage+Ext.swift in Sources */,
-				93897B0528DA30D4000E159E /* ProgressIndicator.swift in Sources */,
-				93897AFB28DA30D4000E159E /* UIView+Ext.swift in Sources */,
-				93897B0728DA30D4000E159E /* VideoHelper.swift in Sources */,
-				93897AFA28DA30D4000E159E /* UIColor+Ext.swift in Sources */,
-				93897AFD28DA30D4000E159E /* OTGripPointView.swift in Sources */,
-				93897AFE28DA30D4000E159E /* StreamerDelegate.swift in Sources */,
-				93897B0328DA30D4000E159E /* FaceCam.swift in Sources */,
-				93897B0128DA30D4000E159E /* Streamer.swift in Sources */,
-				93897AFF28DA30D4000E159E /* ThumbnailsManager.swift in Sources */,
-				93897AF928DA30D4000E159E /* StartIndicator.swift in Sources */,
-				93897B0928DA30D4000E159E /* VideoRecordSlider.swift in Sources */,
-				93897B0028DA30D4000E159E /* StreamerFacecam.swift in Sources */,
-				93897AFC28DA30D4000E159E /* VideoConfig.swift in Sources */,
-				93897B0828DA30D4000E159E /* TimeView.swift in Sources */,
-				93897AF828DA30D4000E159E /* OTResizableView.swift in Sources */,
-				93897B0428DA30D4000E159E /* ImageTransform.swift in Sources */,
-				93897B0228DA30D4000E159E /* CameraPreviewLayer.swift in Sources */,
+				934C58CE28E34E9F00E146D7 /* StreamerDelegate.swift in Sources */,
+				934C58D328E34E9F00E146D7 /* TimeView.swift in Sources */,
+				934C58D028E34E9F00E146D7 /* UIView+Ext.swift in Sources */,
+				934C58CC28E34E9F00E146D7 /* Streamer.swift in Sources */,
+				934C58D128E34E9F00E146D7 /* VideoHelper.swift in Sources */,
+				934C58D428E34E9F00E146D7 /* ImageTransform.swift in Sources */,
+				934C58C728E34E9F00E146D7 /* ProgressIndicator.swift in Sources */,
+				934C58C928E34E9F00E146D7 /* UIColor+Ext.swift in Sources */,
+				934C58D228E34E9F00E146D7 /* UIImage+Ext.swift in Sources */,
+				934C58D628E34E9F00E146D7 /* OTGripPointView.swift in Sources */,
+				934C58CF28E34E9F00E146D7 /* StartIndicator.swift in Sources */,
+				934C58C628E34E9F00E146D7 /* ThumbnailsManager.swift in Sources */,
+				934C58D528E34E9F00E146D7 /* CameraPreviewLayer.swift in Sources */,
+				934C58CA28E34E9F00E146D7 /* VideoConfig.swift in Sources */,
+				934C58CB28E34E9F00E146D7 /* FaceCam.swift in Sources */,
+				934C58D728E34E9F00E146D7 /* StreamerFacecam.swift in Sources */,
+				934C58C828E34E9F00E146D7 /* VideoRecordSlider.swift in Sources */,
+				934C58CD28E34E9F00E146D7 /* OTResizableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 import UIKit
 
+@available(iOS 13.0, *)
 extension UIColor {
     convenience init(rgbValue: Int, alpha: CGFloat = 1.0) {
         let red = CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0

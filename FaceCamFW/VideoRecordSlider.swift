@@ -7,13 +7,21 @@
 
 import UIKit
 
-@objc public protocol VideoRecordSliderDelegate: AnyObject {
+public protocol VideoRecordSliderDelegate {
     func didChangeValue(videoRangeSlider: VideoRecordSlider, startTime: Float64, endTime: Float64)
     func indicatorDidChangePosition(videoRangeSlider: VideoRecordSlider, position: Float64)
-    
-    @objc optional func sliderGesturesBegan()
-    @objc optional func sliderGesturesEnded()
+
+     func sliderGesturesBegan()
+     func sliderGesturesEnded()
 }
+
+//public @objc protocol VideoRecordSliderDelegate: AnyObject {
+//    func didChangeValue(videoRangeSlider: VideoRecordSlider, startTime: Float64, endTime: Float64)
+//    func indicatorDidChangePosition(videoRangeSlider: VideoRecordSlider, position: Float64)
+//
+//    @objc optional func sliderGesturesBegan()
+//    @objc optional func sliderGesturesEnded()
+//}
 
 public class VideoRecordSlider: UIView {
     private enum DragHandleChoice {
@@ -21,28 +29,28 @@ public class VideoRecordSlider: UIView {
         case end
     }
     
-    public weak var delegate: VideoRecordSliderDelegate? = nil
+    public var delegate: VideoRecordSliderDelegate?
     
-    public var progressIndicator   = ProgressIndicator()
-    public var progressBar         = UIView()
-    public var startTimeView       = TimeView()
-    public var endTimeView         = TimeView()
+    var progressIndicator   = ProgressIndicator()
+    var progressBar         = UIView()
+    var startTimeView       = TimeView()
+    var endTimeView         = TimeView()
     
-    public let thumbnailsManager   = ThumbnailsManager()
-    public var duration: Float64   = 0.0
-    public var videoURL            = URL(fileURLWithPath: "")
+    let thumbnailsManager   = ThumbnailsManager()
+    var duration: Float64   = 0.0
+    var videoURL            = URL(fileURLWithPath: "")
     
     public var currentSecond: Float64 {
         return secondsFromValue(value: progressPercentage)
     }
-    public var progressPercentage: Float64 = 0
-    public var endPercentage: Float64 = 0
-    public var startX: CGFloat = 0
+    var progressPercentage: Float64 = 0
+    var endPercentage: Float64 = 0
+    var startX: CGFloat = 0
     
-    public var isProgressIndicatorDraggable: Bool = true
+    var isProgressIndicatorDraggable: Bool = true
     
-    public var isUpdatingThumbnails = false
-    public var isReceivingGesture: Bool = false
+    var isUpdatingThumbnails = false
+    var isReceivingGesture: Bool = false
     public var isRecording: Bool = false
     
     private let backgroundQueue = DispatchQueue(label: "com.app.queue", qos: .background, target: nil)
@@ -62,7 +70,7 @@ public class VideoRecordSlider: UIView {
         self.setup()
     }
 
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         self.setup()
     }
@@ -80,7 +88,7 @@ public class VideoRecordSlider: UIView {
                                          y: 0,
                                          width: 0,
                                          height: self.frame.size.height))
-        progressBar.backgroundColor = UIColor(hex: "80b9e9")
+        progressBar.backgroundColor = .red
         self.addSubview(progressBar)
 
         self.addObserver(self,
@@ -158,7 +166,7 @@ public class VideoRecordSlider: UIView {
     // MARK: - Private functions
 
     // MARK: - Crop Handle Drag Functions
-    @objc public  func progressDragged(recognizer: UIPanGestureRecognizer){
+    @objc func progressDragged(recognizer: UIPanGestureRecognizer){
         if duration == 0 || isRecording || !isProgressIndicatorDraggable {
             return
         }
@@ -216,12 +224,12 @@ public class VideoRecordSlider: UIView {
         if recognizer.state == .began {
             
             self.isReceivingGesture = true
-            self.delegate?.sliderGesturesBegan?()
+            self.delegate?.sliderGesturesBegan()
             
         } else if recognizer.state == .ended {
             
             self.isReceivingGesture = false
-            self.delegate?.sliderGesturesEnded?()
+            self.delegate?.sliderGesturesEnded()
         }
     }
     
@@ -236,7 +244,7 @@ public class VideoRecordSlider: UIView {
         layoutSubviews()
     }
     
-    public  func resetProgressBar() {
+    public func resetProgressBar() {
         self.startX = progressIndicator.frame.midX - 5
         layoutSubviews()
     }

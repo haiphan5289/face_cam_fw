@@ -34,6 +34,7 @@ extension CIImage {
 }
 
 
+@available(iOS 13.0, *)
 extension UIImage {
     func createTabBarIndicator(color: UIColor, size: CGSize, lineWidth: CGFloat) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, 0)

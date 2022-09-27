@@ -7,11 +7,11 @@
 
 import UIKit
 
-public class StartIndicator: UIView {
+class StartIndicator: UIView {
     
-    public var imageView = UIImageView()
+    var imageView = UIImageView()
     
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         self.isUserInteractionEnabled = true
         

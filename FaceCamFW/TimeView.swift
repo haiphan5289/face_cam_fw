@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class TimeView: UIView {
+class TimeView: UIView {
     
     public var timeLabel       = UILabel()
     public var backgroundView  = UIView() {
