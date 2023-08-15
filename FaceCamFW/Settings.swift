@@ -4,6 +4,7 @@ import VideoToolbox
 
 // DeviceGuru is a simple lib (Swift) to know the exact type of the device, e.g. iPhone 6 or iPhone 6s.
 // https://github.com/InderKumarRathore/DeviceGuru
+//
 
 public class Settings: SettingsKeys {
     
