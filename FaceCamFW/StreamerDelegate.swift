@@ -76,7 +76,7 @@ extension CaptureStatus: LocalizedError {
     }
 }
 
-enum StreamerNotification {
+public enum StreamerNotification {
     case ActiveCameraDidChange
     case ChangeCameraFailed
     case FrameRateNotSupported

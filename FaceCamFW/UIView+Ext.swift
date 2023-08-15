@@ -131,7 +131,7 @@ extension UIView {
         }
     }
     
-    func fillSuperview() {
+    public func fillSuperview() {
         guard let superview = self.superview else {
             return
         }

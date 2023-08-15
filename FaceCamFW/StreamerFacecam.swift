@@ -43,7 +43,6 @@ public protocol StreamerFacecamManagerDelegate: AnyObject {
     func didOutputCGImage(outputImage: CGImage?, pipImage: CGImage?)
 }
 
-@available(iOS 13.0, *)
 public class StreamerFacecamManager: NSObject {
     public weak var delegate: StreamerFacecamManagerDelegate?
     
@@ -596,7 +595,7 @@ public class StreamerFacecamManager: NSObject {
 
                 // We want to select input port (Built-in mic./Headset mic./AirPods) on our own
                 // Also it keeps h/w sample rate as is (48kHz for Built-in mic. and 16kHz for AirPods)
-                self.session?.automaticallyConfiguresApplicationAudioSession = false
+//                self.session?.automaticallyConfiguresApplicationAudioSession = false
 
                 // Raw audio and video will be delivered to app in form of CMSampleBuffer. Refer to func captureOutput for details.
                 
@@ -921,7 +920,6 @@ public class StreamerFacecamManager: NSObject {
 }
 
 // MARK: Notifications from capture session
-@available(iOS 13.0, *)
 extension StreamerFacecamManager {
     public func registerForNotifications() {
         let nc = NotificationCenter.default
@@ -1047,7 +1045,6 @@ extension StreamerFacecamManager {
 
 // MARK: AVCaptureVideoDataOutputSampleBufferDelegate
 // MARK: AVCaptureAudioDataOutputSampleBufferDelegate
-@available(iOS 13.0, *)
 extension StreamerFacecamManager: AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
     public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         
@@ -1119,8 +1116,8 @@ extension StreamerFacecamManager: AVCaptureVideoDataOutputSampleBufferDelegate, 
     }
 }
 
-@available(iOS 13.0, *)
 extension StreamerFacecamManager: AVCapturePhotoCaptureDelegate {
+    @available(iOS 11.0,*)
     public func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if error == nil, let imageData = photo.fileDataRepresentation() {
             do {
@@ -1141,7 +1138,6 @@ extension StreamerFacecamManager: AVCapturePhotoCaptureDelegate {
 }
 
 // MARK: Video player
-@available(iOS 13.0, *)
 extension StreamerFacecamManager: AVPlayerItemOutputPullDelegate {
     public func initVideo(_ videoURL: URL?) {
         guard let url = videoURL else {
